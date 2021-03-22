@@ -1,3 +1,47 @@
+# Aplicativo de calculadora criado como Trabalho Prático do Módulo ReactJS - BootCamp FrontEnd - IGTI sob orientação do Professor Marcelo Sampaio
+
+Proposta Inicial:
+
+- Desenvolver uma aplicação de calculadora com os operadores Adição, Subtração, Multiplicação, Divisão e operação de elevar ao quadrado;
+
+- Tratar o erro de divisão por zero;
+
+- Implementar em ReactJS;
+
+- Utilizar Class Components;
+
+- Implementar utilizando CSS puro;
+
+Diferenciais desta implementação:
+
+- Permite a construção de expressões matemáticas concatenando mais de uma operação;
+
+- Permite a concatenação de expressão matemática com o último resultado exibido;
+
+- Exibe resultado parcial da operação enquanto a expressão aritmética está digitada;
+
+- Foi acrescentado o botão de backspace;
+
+- Foi acrescentado o botão de dois zeros;
+
+- O tratamento da expressão matemática é feito por uma API desenvolvida por mim que recebe uma string com a expressão matemática e retorna o resultado;
+
+- O tratamento de erro de formulação de expressão também é realizado;
+
+- Botões controlados tanto por mouse quanto por teclado;
+
+Para próximas releases:
+
+- Acrescentar opção de usar parênteses na expressão;
+
+- Acrescentar mais operadores tais como: raiz quadrado, potência para outros expoentes;
+
+- Aumentar o limite de caracteres digitados;
+
+- Disponibilizar histórico de operações;
+
+Iberê Abondanza Kuhlmann
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

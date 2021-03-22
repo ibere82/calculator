@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+.view {
+  display: grid;
+  place-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.screen {
+  display: grid;
+  grid-template-rows: 10fr 80fr 10fr;
+  grid-template-columns: 10fr 80fr 10fr;
+  height: 550px;
+  width: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculator {
+  grid-column: 2;
+  grid-row: 2;
+  border: 2px solid black;
+  border-radius: 5%;
+  overflow:hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #7E8054;
 }
 
-.App-link {
-  color: #61dafb;
+.display {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 320px;
+  height: 90px;
+  margin: 10px;
+  padding: 2px;
+  border: 1.5px solid black;
+  border-radius: 10px;
+  background-color:lightgoldenrodyellow;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error-display{
+  border: 1.5px solid red;
+}
+
+.expression{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.partial-result{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1em;
+}
+
+.number-button {
+  display: grid;
+  margin: 0.2em;
+  place-items: center;
+  width: 2.3em;
+  height: 2.3em;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #FCE196;
+  color: black;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.number-button-enabled:hover{
+  background-color: #E6CD8A;
+}
+.number-button-enabled:active{
+  border: 1px solid #FFFFF4;
+}
+
+.operator-button {
+  display: grid;
+  margin: 0.2em;
+  place-items: center;
+  width: 2.3em;
+  height: 2.3em;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color:#CCCCC3;
+  color: black;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.operator-button-enabled:hover{
+  background-color: #ABABA4;
+}
+.operator-button-enabled:active{
+  border: 1px solid #FFFFF4;
+}
+
+.numbers-conteiner {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+}
+
+.operators-conteiner {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+}
+
+.buttons-conteiner {
+  display:flex;
+  justify-content: center;
+}
+
+.disabled {
+  color: gray;
+  cursor:default;
 }
