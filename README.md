@@ -14,6 +14,8 @@ Proposta Inicial:
 
 Diferenciais desta implementação:
 
+- Implementado com Functional Components;
+
 - Permite a construção de expressões matemáticas concatenando mais de uma operação;
 
 - Permite a concatenação de expressão matemática com o último resultado exibido;
